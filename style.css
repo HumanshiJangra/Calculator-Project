@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone {
+    width: 320px;
+    height: 550px;
+    background-color: #dc6969;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+
+}
+
+.phone::before {
+    content: '';
+    position: absolute;
+    width: 180px;
+    height: 350px;
+    background-color: #cb4c4c;
+    right: -90px;
+    bottom: 50px;
+    border-radius: 100px;
+}
+
+.output {
+    width: 100%;
+    height: 150px;
+}
+#val{
+    width: 100%;
+    height: 150px;
+    background-color: #dc6969; 
+    border-style: none;
+    font-size: 20px;
+    padding: 10px;
+    
+}
+
+.buttonWrapper {
+    width: 100%;
+    height: calc(100% - 150px);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.buttonWrapper div {
+    padding: 10px;
+}
+.buttonWrapper button{
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 5px 10px #00000057;
+    border-radius: 50%;
+    background-color: #dc6969;
+    border-style: none;
+    color: #fff;
+    font-size: 18px;
+}
+button:hover{
+    background-color: #312e2e55;
+    transition: 0.75s;
+  }
+.equalTO {
+    padding: 5px;
+
+}
+.equalTO button{
+    width: 100%;
+    height: 100%;
+    box-shadow: 2px 5px 10px #c94848;
+    border-radius: 50%;
+    background-color: #fff;
+    border-style: none;
+    color: #000;
+    font-size: 18px;
+    
+}
